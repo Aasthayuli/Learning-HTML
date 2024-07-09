@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My 3rd learning html page</title>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <main>
+        <section>Education: Global institute of technology and management  | school:Jawahar Navodaya Vidyalaya</section>
+        <section> Experiences: fresher</section>
+         <!-- section tag is when we want to show the written thing in a particular section. -->
+
+        <article>My Story:</article>
+        <!--article tag is for writing articles whatever we want to write something about.-->
+
+        <aside>This is an ad.</aside>
+        <!--The aside tag will not be read by the sco(search channel optimisation) when  looking by the browser.It is to run ads in the web page. -->
+
+        <a href="https://google.com">google</a>
+        <!--this will open the link in the same tab that of document.-->
+
+        <br>
+
+        <a href="https://google.com" target="_main">google new</a>
+        <!-- this will open the link in new tab.-->
+
+        <a href="https://google.com" target="_main">
+            <img src="/HTML files/google-logo.jpg" alt="google" height="300"></a>
+        <!-- This tag makes a clickable pic i.e.,the pic is also a link to google.-->
+
+        <div></div>
+        <!-- this tag takes full width whatever the element is inside or not, it doesn't matter.-->
+
+        <div>
+            <p>Hello World!</p>
+            <p>namaste</p>
+            <p>hi</p>
+        </div>
+        <div>
+            <p>bye</p>
+            <p>good bye</p>
+            <p>ciao</p>
+            
+        </div>
+
+        <ul>
+            <li>apple</li>
+            <ul>
+                <li>colour: Red</li>
+                <li>season:winter</li>
+            </ul>
+            <li>mango</li>
+            <ul>
+                <li>colour: yellow</li>
+                <li>season:summer</li>
+            </ul>
+            <li>guava</li>
+            <ul>
+                <li>colour: green</li>
+                <li>season:summer</li>
+            </ul>
+        </ul>
+        <!--this tag is used for listing the data by bullet points.-->
+        <!--2nd time use of this tag within the same tag is the sublisting within the data. -->
+
+        <ol>
+            <li>apple</li>
+            <ol>
+                <li>colour: Red</li>
+                <li>season: winter</li>
+            </ol>
+            <li>mango</li>
+            <ol>
+                <li>colour: yellow</li>
+                <li>season: summer</li>
+            </ol>
+            <li>guava</li>
+            <ol>
+                <li>colour: green</li>
+                <li>season: summer</li>
+            </ol>
+        </ol>
+          <!-- now this time the tag used is for orderd listing i.e., by numbering . -->
+           
+            <hr><!--& this is to draw a line-->
+
+        <table>
+            <caption>Student Data</caption>
+            <!--this caption tag is for giving some short info. about the table.-->
+            <thead>
+            <tr>
+            <th>Name</th>
+            <th>Roll no.</th>
+            </tr>
+            </thead>
+            <tr>
+                <td>Aasthayuli</td>
+                <td>221164</td>
+            </tr>
+            <tbody>
+            <tr>
+                <td>Aakriti Singh</td>
+                <td>228022</td>
+            </tr>
+            <tr>
+                <td>puja</td>
+                <td>221177</td>
+            </tr>
+            </tbody>
+        </table>
+
+                <hr>
+
+        <table>
+            <caption>Student Data</caption>
+            <!--this caption tag is for giving some short info. about the table.-->
+            <thead>
+            <tr>
+            <th colspan="2">Information</th>
+            <!--colspan is used if we want to put a single element in a row of the table and It covers more than 1 column. 
+                So, the no. written will be the no. of columns we want to be covered by the word.-->
+            
+            </tr>
+            </thead>
+            <tr>
+                <td>Aasthayuli</td>
+                <td>221164</td>
+            </tr>
+            <tbody>
+            <tr>
+                <td>Aakriti Singh</td>
+                <td>228022</td>
+            </tr>
+            <tr>
+                <td>puja</td>
+                <td>221177</td>
+            </tr>
+            </tbody>
+        </table>
+
+                                    <!--to create a form-->
+                                    <h2>
+                                                                  
+                                        Registration Form 
+               
+                                   
+                               </h2>
+        <form action="/action.php">
+            <input type="text" placeholder="username">
+            <br>
+            <br>
+            <input type="password" placeholder="password">
+            <!--type me password daalne se password bullets type(dark bold dots) ki dikhti h.-->
+              
+            
+            <!--<br>
+            <input type="radio" value="class XI" name="class">class XI
+            <input type="radio" value="class XII" name="class">class XII-->
+
+            <!--------------------------------------------------------------------------------------------------------------->
+
+
+            <!--value k baad aur arrow khtm hone k baad same chij likhni h 
+                q ki screen pr print arrow k baad wali chij hogi lqn backend k paas value ki info. jayegi.
+                Isiliye smjhne me asani hone k liye same rkhna hota h isko. -->
+
+
+                <br>
+                <h4>select your class</h4>
+                <label for="101">
+                     <input type="radio" value="class XI" name="class" id="101">class XI
+                     </label>
+                     <label for="102">
+                    <input type="radio" value="class XII" name="class" id="102">class XII
+                </label>
+                <!--label tag se ye fayda h ki yadi hm button k bgl wale text pr bhi click krenge to wo button tick ho jayega.-->
+                <br>
+                <h4>select your subject</h4>
+                <label for="maths">
+                    <input type="checkbox" value="maths" name="subject" id="101">maths
+                </label>
+
+                <label for="physics">
+                    <input type="checkbox" value="physics" name="subject" id="102">physics
+                </label>
+
+                <label for="EVS">
+                    <input type="checkbox" value="EVS" name="subject" id="103">EVS
+                </label>
+
+                <label for="PPS">
+                    <input type="checkbox" value="PPS" name="subject" id="104">PPS
+                </label>
+                 
+                <br>
+                                                                 
+                
+                
+                <br>
+                <h3>choose city</h3>
+                <select name="city" id="city">
+                    <option value="delhi">delhi</option>
+                    <option value="mumbai">mumbai</option>
+                    <option value="chandigarh">chandigarh</option>
+                    <option value="ranchi">ranchi</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <h3>Provide your feedback:)</h3>
+                <textarea name="feedback" id="101" placeholder="please give your valuable feedback here" rows="10">feedback</textarea>
+                <!-- mention any one : either row or column-->
+                <br>
+                <br>
+                <input type="submit" value="submit">
+
+        </form>
+        <!-- iframe tag is to run any wesite link at the same web page u are preparing.-->
+        <br>
+        <h3>source of learning:)</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4" 
+        title="YouTube video player"
+         frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen>
+        </iframe>
+     <!--it is not allowed by every website that it will allow itself to be shown by other websites 
+             because people can misuse it to let people go to their websites-->
+             <br>
+             <video  width="560" height="315" src="/HTML files/WhatsApp Video .mp4" controls autoplay loop>friends</video>
+    </main>
+
+<footer></footer>
+</body>
+</html>
