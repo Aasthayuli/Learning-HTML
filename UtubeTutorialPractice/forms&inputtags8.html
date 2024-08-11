@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>forms and input tags</title>
+  </head>
+  <body>
+    <h2>This is HTML form.</h2>
+
+    <form action="backend.php">
+      <label for="name">Name</label>
+      <div>
+        <input
+          type="text"
+          placeholder="Enter your name here"
+          name="myname"
+          id="name"
+        />
+      </div>
+
+      <!-- 'for' in label and 'id' in input should be same  -->
+
+      <!-- <label for="Branch" >Branch</label> -->
+      <div>Branch:<input type="text" name="mybranch" id="Branch" /></div>
+
+      <!-- <label for="Roll">Roll No.</label> -->
+      <div>Roll No.: <input type="text" name="Roll" id="Roll" /></div>
+
+      <label for="email">Email ID</label>
+      <div>
+        <input type="email" name="email" id="email" />
+      </div>
+
+      <label for="bonus">Bonus</label>
+      <div>
+        <input type="number" name="bonus point" id="bonus" />
+        <!-- used to enter large numbers -->
+      </div>
+
+      <label for="dob">DOB</label>
+      <div>
+        <input type="date" name="DOB" id="dob" />
+      </div>
+
+      <label for="age">Are you below 18?<br />Tick the checkbox.</label>
+      <div>
+        Yes<input type="checkbox" name="age" id="age" />No<input
+          type="checkbox"
+          name="years"
+          id="age"
+        />
+      </div>
+
+      <!-- In checkbox, all boxes can be selected irrespective of their name. -->
+
+      <label for="gender">Gender</label>
+      <div>
+        Male<input type="radio" name="gender" id="gender" /> Female<input
+          type="radio"
+          name="gender"
+          id="gender"
+        />
+        Other<input type="radio" name="gender" id="gender" />
+      </div>
+      <!-- giving the name same will make sure that only one box can be dotted. -->
+
+      <div>
+        Write about Yourself:<br /><textarea
+          type="my Text"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+
+      <label for="car">Select Cars</label>
+      <select name="mycar" id="car">
+        <option value="ind" selected>Indica</option>
+        <!--'selected' keyword  selects the car automatically.-->
+        <option value="sw">Swift</option>
+        <option value="toy">Toyota</option>
+        <option value="thar">Thar</option>
+      </select>
+
+      <div>
+        <input type="submit" name="Submit Now" />
+        <input type="reset" name="Reset Now" />
+      </div>
+      <!-- reset button refreshes the form and u can enter new info. -->
+      <!-- the submit button submits the file to the backend file. -->
+    </form>
+  </body>
+</html>

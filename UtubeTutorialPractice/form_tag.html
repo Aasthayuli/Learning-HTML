@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form_ tag</title>
+  </head>
+  <body>
+    <li>form tag is used to create a form.</li>
+    <li>
+      In HTML5, by default this character set(accept-charset) is already present
+      in the meta tag. so, It's no need to mention it.
+    </li>
+    <li>
+      action attribute specifies where to send the form- data when a form is
+      submitted.
+    </li>
+    <li>
+      autocomplete attribute specifies whether a form should have autocomplete
+      on or off. when autocomplete is on, the browser automatically complete
+      values based on the values that the user has entered before.
+    </li>
+    <li>
+      method attribute specifies how to send form-data(the form data is sent to
+      the page specified in the action attribute.form data can be sent as URL
+      variables (with method="get")or as HTTP post transaction(with
+      method="post") on server.)
+    </li>
+    <li>get is by default but post is safer.</li>
+    <li>
+      name sttribute specifies the name of the form. it is used to reference
+      elements in a javascript, or to reference form data after a form is
+      submitted.
+    </li>
+    <li>
+      novalidate when present,it specifies that the form-data(input) should not
+      be validated when submitted.
+    </li>
+    <li>
+      the target attribute specifies a name or a keyword that indicates where to
+      display the response taht is received after submitting the form.
+      <ol>
+        _blank:-the response is diplayed in a new tab or window
+      </ol>
+      <ol>
+        _self:-the response is displayed in the same frame(this is default)
+      </ol>
+      <ol>
+        _top:-the resonse is displayed in the full body of the window
+      </ol>
+      <ol>
+        _parent:-the resonse is displayed in the parent window
+      </ol>
+      <ol>
+        framename:-the response is displaye in a named iframe.
+      </ol>
+    </li>
+    <form
+      accept-charset="UTF-8"
+      action="submitted_form.html"
+      autocomplete="on"
+      name="login-form"
+      novalidate
+      target="_blank"
+    >
+      First Name: <input type="text" name="fname" /><br /><br />
+      Last Name: <input type="text" name="lname" /><br /><br />
+
+      <input type="submit" />
+      <!-- <form action="thanks.html">
+        <input type="text" name="sbox">
+        <input type="submit" name="sbutton">
+
+    </form>-->
+    </form>
+  </body>
+</html>
